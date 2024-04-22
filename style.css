@@ -1,0 +1,204 @@
+body{
+
+    background-image: url("/image/greenhill.jpg");
+
+    background-repeat: no-repeat;
+
+   height: 100vh;
+
+   width: 100%;
+
+    background-size: cover;
+
+   overflow: hidden;
+}
+
+.mario_style{
+
+    position: absolute;
+
+    bottom: 4%;
+
+    right: 70%;
+
+}
+
+@keyframes walkleft{
+
+    0% {
+        transform: translate(1%);
+  
+    }
+    100% {
+        transform: translate(600%);
+    }
+
+
+}
+
+
+@keyframes jump{
+
+    0% {
+        transform: translateY(-30%);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    80% {
+        transform: translateY(-60%);
+    }
+    90%{
+        transform: translateY(-70%);
+
+    }
+   
+
+
+
+}
+
+
+.mario_jump{
+
+
+
+animation: jump 0.5s ease-in-out ;
+
+}
+
+
+.pipe_style{
+
+    position: absolute;
+
+    bottom: 2%;
+    left: 100%;
+
+}
+
+.bird_style{
+
+    position: absolute;
+
+    bottom: 20%;
+    left: 30%;
+
+}
+
+
+@keyframes pipe_walkright{
+
+
+    0%{
+       
+        transform: translate(0%);
+
+    } 30%{
+
+        transform: translate(-300%);
+
+    }40%{
+
+        transform: translate(-400%);
+
+    }
+
+    50%{
+
+        transform: translate(-500%);
+
+
+      }
+
+      60%{
+
+        transform: translate(-600%);
+
+    }
+    
+
+    70%{
+
+        transform: translate(-700%);
+
+    }80%{
+
+        transform: translate(-800%);
+
+    }90%{
+
+        transform: translate(-900%);
+
+    }
+    
+    100%{
+
+        transform: translate(-1000%);
+
+    }
+
+}
+
+.pipe_style iframe{
+
+animation: pipe_walkright 2s infinite ease-in-out  ;
+
+}
+
+@media screen and (max-width: 2000px) {
+
+    
+#mario{
+
+    position: absolute;
+
+    bottom: 500%;
+
+    right: 70%;
+
+    width: 25rem;
+
+}
+
+
+#pipe{
+
+    position: absolute;
+
+    bottom: 410%;
+    left: 30%;
+    width: 25rem;
+
+}
+    
+}
+
+
+@media screen and (max-width: 1600px) {
+
+    
+    #mario{
+    
+        position: absolute;
+    
+        bottom: -7rem;
+    
+        right: 70%;
+    
+        width: 10rem;
+    
+    }
+    
+    
+    #pipe{
+    
+        position: absolute;
+    
+        bottom: -7rem;
+        left: 10%;
+        width: 10rem;
+    
+    }
+        
+    }
