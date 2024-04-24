@@ -260,17 +260,37 @@ animation: pipe_walkright 2s infinite ease-in-out  ;
     }
     
     @media screen and (max-width: 1600px) {
+        
+         .mario{
+
+            width: 15rem;
+         }
+
         .mario_style {
-            bottom: 20%; /* Adjust the position of Mario */
+            bottom: 23%; /* Adjust the position of Mario */
             right: 50%; /* Adjust the position of Mario */
             width: 15rem; /* Adjust the size of Mario */
         }
+        
     
         .pipe_style {
             bottom: 20%; /* Adjust the position of the pipe */
             left: 80%; /* Adjust the position of the pipe */
             width: 15rem; /* Adjust the size of the pipe */
         }
+
+        @media screen and (max-width: 600px) {
+            .mario_style {
+                bottom: 20%; /* Adjust the position of Mario */
+                right: 10%; /* Adjust the position of Mario */
+                width: 15rem; /* Adjust the size of Mario */
+            }
+        
+            .pipe_style {
+                bottom: 20%; /* Adjust the position of the pipe */
+                left: 80%; /* Adjust the position of the pipe */
+                width: 15rem; /* Adjust the size of the pipe */
+            }
 
 
         @keyframes pipe_walkright{
