@@ -1,6 +1,6 @@
 body{
 
-    background-image: url("/image/greenhill.jpg");
+    background-image: url("../mario_web-main/image/greenhill.jpg");
 
     background-repeat: no-repeat;
 
@@ -23,14 +23,58 @@ body{
 
 }
 
-@keyframes walkleft{
+.nuvem_style{
 
-    0% {
-        transform: translate(1%);
-  
-    }
-    100% {
-        transform: translate(600%);
+    position: absolute;
+
+    bottom: 60%;
+
+    
+
+    right: 10%;
+
+}
+
+.nuvem{
+
+    animation: nuvem_walk 10s infinite ease-in-out;
+}
+
+@keyframes nuvem_walk{
+
+    
+    0%{
+       
+        transform: translate(100%);
+
+    } 
+   
+    40%{
+
+        transform: translate(-200%);
+
+
+      }
+
+    60%{
+
+        transform: translate(-400%);
+
+
+      }
+
+      80%{
+
+        transform: translate(-600%);
+
+      }
+
+    
+    
+    100%{
+
+        transform: translate(-800%);
+
     }
 
 
@@ -146,29 +190,29 @@ animation: pipe_walkright 2s infinite ease-in-out  ;
 
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 4000px) {
 
     
-#mario{
+.mario{
 
     position: absolute;
 
-    bottom: 500%;
+    bottom: 2%;
 
     right: 70%;
 
-    width: 25rem;
+    width: 15rem;
 
 }
 
 
-#pipe{
+.pipe{
 
     position: absolute;
 
-    bottom: 410%;
+    bottom: 30%;
     left: 30%;
-    width: 25rem;
+    width: 15rem;
 
 }
     
@@ -178,7 +222,7 @@ animation: pipe_walkright 2s infinite ease-in-out  ;
 @media screen and (max-width: 1600px) {
 
     
-    #mario{
+    .mario{
     
         position: absolute;
     
@@ -191,7 +235,7 @@ animation: pipe_walkright 2s infinite ease-in-out  ;
     }
     
     
-    #pipe{
+    .pipe{
     
         position: absolute;
     
@@ -200,5 +244,88 @@ animation: pipe_walkright 2s infinite ease-in-out  ;
         width: 10rem;
     
     }
+
+    @media screen and (max-width: 2000px) {
+        .mario_style {
+            bottom: 0%; /* Adjust the position of Mario */
+            right: 50%; /* Adjust the position of Mario */
+            width: 20rem; /* Adjust the size of Mario */
+        }
+    
+        .pipe_style {
+            bottom: 10%; /* Adjust the position of the pipe */
+            left: 20%; /* Adjust the position of the pipe */
+            width: 20rem; /* Adjust the size of the pipe */
+        }
+    }
+    
+    @media screen and (max-width: 1600px) {
+        .mario_style {
+            bottom: 20%; /* Adjust the position of Mario */
+            right: 50%; /* Adjust the position of Mario */
+            width: 15rem; /* Adjust the size of Mario */
+        }
+    
+        .pipe_style {
+            bottom: 20%; /* Adjust the position of the pipe */
+            left: 80%; /* Adjust the position of the pipe */
+            width: 15rem; /* Adjust the size of the pipe */
+        }
+
+
+        @keyframes pipe_walkright{
+
+
+            0%{
+               
+                transform: translate(0%);
+        
+            } 30%{
+        
+                transform: translate(-400%);
+        
+            }40%{
+        
+                transform: translate(-400%);
+        
+            }
+        
+            50%{
+        
+                transform: translate(-500%);
+        
+        
+              }
+        
+              60%{
+        
+                transform: translate(-600%);
+        
+            }
+            
+        
+            70%{
+        
+                transform: translate(-700%);
+        
+            }80%{
+        
+                transform: translate(-800%);
+        
+            }90%{
+        
+                transform: translate(-900%);
+        
+            }
+            
+            100%{
+        
+                transform: translate(-1000%);
+        
+            }
+        
+        }
+    }
+    
         
     }
